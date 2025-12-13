@@ -249,6 +249,16 @@ body {
     margin: auto;
 }
 
+@media (max-width: 480px) {
+    .student-card img {
+        height: 180px;
+    }
+
+    .student-name {
+        font-size: 13px;
+    }
+}
+
 .student-card {
     background: #c70a0a;
     border-radius: 16px;
@@ -544,6 +554,15 @@ body {
 .galeri-section {
     padding: 80px 120px;
 }
+@media (max-width: 480px) {
+    .galeri-section {
+        padding: 50px 20px;
+    }
+
+    .galeri-img {
+        height: 160px;
+    }
+}
 
 .section-sub {
     margin-top: 5px;
@@ -777,3 +796,90 @@ body, p, li, span {
         flex-direction: column;
     }
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        width: calc(100% - 30px);
+        left: 15px;
+        transform: none;
+        padding: 12px 16px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gradient-animate {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .typing-container {
+        font-size: 16px;
+    }
+
+    .counter-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .about-left strong,
+    .about-right strong {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 768px) {
+    .walikelas {
+        padding: 50px 20px;
+    }
+
+    .walikelas img {
+        width: 200px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .posisi {
+        flex-direction: column;
+    }
+
+    .kotak {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .garis-vertikal {
+        height: 30px;
+    }
+}
+
