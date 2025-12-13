@@ -1124,3 +1124,60 @@ html, body {
     grid-template-columns: 1fr;
   }
 }
+/* ============================= */
+/* 🔥 FIX GRID & SECTION MOBILE 🔥 */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  /* PAKSA SEMUA SECTION FULL LEBAR */
+  section,
+  .about-section,
+  .galeri-section,
+  .structure,
+  .wali-section {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* FIX STUDENT GRID */
+  .student-grid {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  /* KARTU SISWA JANGAN MELEBAR */
+  .student-card {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  /* GALERI GRID */
+  .galeri-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galeri-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-card {
+    max-width: 220px;
+  }
+}
