@@ -255,3 +255,22 @@ section {
     text-align: left;
   }
 }
+.mobile-safe {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .mobile-safe .posisi,
+  .mobile-safe .garis-vertikal {
+    position: static;
+    margin: 10px auto;
+  }
+
+  .mobile-safe .posisi {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
