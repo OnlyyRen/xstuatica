@@ -987,3 +987,140 @@ body, p, li, span {
     }
 }
 
+/* ========================= */
+/* 🔥 MOBILE FINAL FIX 🔥 */
+/* ========================= */
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR MOBILE (SATU ATURAN SAJA) ===== */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 10px;
+
+    width: calc(100% - 20px);
+    max-width: none;
+
+    left: 10px;
+    right: 10px;
+    transform: none;
+
+    padding: 12px;
+    gap: 12px;
+
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+  }
+
+  .navbar nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .navbar nav a {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .logo-container span {
+    font-size: 14px;
+  }
+
+  .logo-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ===== HERO ===== */
+@media (max-width: 768px) {
+  .gradient-animate {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .typing-container {
+    font-size: 16px;
+  }
+
+  .counter-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* ===== ABOUT ===== */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+/* ===== WALI KELAS ===== */
+@media (max-width: 768px) {
+  .walikelas {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .walikelas img {
+    width: 200px;
+    height: 260px;
+  }
+}
+
+/* ===== STUDENT GRID ===== */
+@media (max-width: 768px) {
+  .student-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== GALERI ===== */
+@media (max-width: 768px) {
+  .galeri-section {
+    padding: 50px 20px;
+  }
+
+  .galeri-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeri-grid {
+    grid-template-columns: 1fr;
+  }
+}
