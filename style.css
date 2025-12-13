@@ -274,3 +274,8 @@ section {
     gap: 10px;
   }
 }
+@media (max-width: 768px) {
+  .struktur-wrapper {
+    display: none;
+  }
+}
