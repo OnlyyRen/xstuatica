@@ -260,10 +260,10 @@ body {
 }
 
 .student-card {
-    background: #c70a0a;
+    background: #da6907;
     border-radius: 16px;
     padding: 15px;
-    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.748);
+    box-shadow: 0 10px 25px rgba(34, 27, 93, 0.748);
 }
 
 .student-card img {
