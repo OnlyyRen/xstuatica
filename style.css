@@ -110,6 +110,24 @@ body {
     opacity: 1;
 }
 
+@media (max-width: 480px) {
+    .navbar {
+        width: 90%;
+        padding: 10px 14px;
+        gap: 20px;
+    }
+
+    .logo-container span {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+}
+
+
 /* ======== HERO SECTION ======== */
 .hero {
     height: 100vh;
@@ -129,6 +147,13 @@ body {
     animation: gradientMove 5s linear infinite;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+@media (max-width: 480px) {
+    .gradient-animate {
+        font-size: 36px;
+        line-height: 1.2;
+    }
 }
 
 @keyframes gradientMove {
@@ -259,6 +284,12 @@ body {
     }
 }
 
+@media (max-width: 360px) {
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .student-card {
     background: #c70a0a;
     border-radius: 16px;
@@ -292,6 +323,28 @@ body {
 
 .about-right li {
     margin-bottom: 6px;
+}
+
+@media (max-width: 600px) {
+    .about-container {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+    }
+
+    .about-right {
+        padding: 16px;
+    }
+
+    .about-right strong,
+    .about-left strong {
+        font-size: 13px;
+        line-height: 1.6;
+    }
 }
 
 /* ======== WALI KELAS SECTION ======== */
@@ -757,4 +810,11 @@ h1, h2, h3, h4, h5 {
 
 body, p, li, span {
     font-family: Arial, sans-serif;
+}
+
+@media (max-width: 480px) {
+    p, li, strong {
+        font-size: 13px;
+        letter-spacing: 0.3px;
+    }
 }
