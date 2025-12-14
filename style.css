@@ -243,10 +243,19 @@ body {
 
 .student-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 25px;
-    max-width: 100px;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.student-card {
+    padding: 12px;
+}
+
+.student-card img {
+    height: 180px;
 }
 
 @media (max-width: 480px) {
@@ -256,6 +265,28 @@ body {
 
     .student-name {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .student-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .student-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .student-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .student-card img {
+        height: 160px;
     }
 }
 
