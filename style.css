@@ -789,3 +789,51 @@ h1, h2, h3, h4, h5 {
 body, p, li, span {
     font-family: Arial, sans-serif;
 }
+
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 16px;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-text {
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .section-title {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-right {
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+    .about-right h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about-right ul {
+        padding-left: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-left {
+        text-align: center;
+    }
+}
