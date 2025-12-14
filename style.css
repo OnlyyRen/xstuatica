@@ -627,6 +627,19 @@ body {
     margin-top: 40px;
 }
 
+/* ======== ANIMATIONS ======== */
+.slow-section {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 2.3s ease-out,
+                transform 2.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slow-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* ======== RESPONSIVE DESIGN ======== */
 @media (max-width: 1024px) {
     .about-section,
